@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  greeting-controller:
+    image: ${DOCKER_REGISTRY-}greetingcontroller
+    build:
+      context: .
+      dockerfile: greeting-controller\Dockerfile
+
+  greeting-service:
+    image: ${DOCKER_REGISTRY-}greetingservice
+    build:
+      context: .
+      dockerfile: greeting-service\Dockerfile
+

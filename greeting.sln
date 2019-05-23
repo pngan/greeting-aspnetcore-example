@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28917.182
+MinimumVisualStudioVersion = 15.0.26124.0
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "greeting-controller", "greeting-controller\greeting-controller.csproj", "{E902FCBB-AE31-4A08-8F7A-3CB70D48A51A}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{9B1B7383-AE95-43B3-AB36-458FE4300FA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "greeting-service", "greeting-service\greeting-service.csproj", "{2D4A9825-42E9-4D11-BF20-5328648DEE53}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E902FCBB-AE31-4A08-8F7A-3CB70D48A51A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E902FCBB-AE31-4A08-8F7A-3CB70D48A51A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E902FCBB-AE31-4A08-8F7A-3CB70D48A51A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{E902FCBB-AE31-4A08-8F7A-3CB70D48A51A}.Debug|x64.Build.0 = Debug|Any CPU
+		{E902FCBB-AE31-4A08-8F7A-3CB70D48A51A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E902FCBB-AE31-4A08-8F7A-3CB70D48A51A}.Debug|x86.Build.0 = Debug|Any CPU
+		{E902FCBB-AE31-4A08-8F7A-3CB70D48A51A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E902FCBB-AE31-4A08-8F7A-3CB70D48A51A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E902FCBB-AE31-4A08-8F7A-3CB70D48A51A}.Release|x64.ActiveCfg = Release|Any CPU
+		{E902FCBB-AE31-4A08-8F7A-3CB70D48A51A}.Release|x64.Build.0 = Release|Any CPU
+		{E902FCBB-AE31-4A08-8F7A-3CB70D48A51A}.Release|x86.ActiveCfg = Release|Any CPU
+		{E902FCBB-AE31-4A08-8F7A-3CB70D48A51A}.Release|x86.Build.0 = Release|Any CPU
+		{9B1B7383-AE95-43B3-AB36-458FE4300FA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B1B7383-AE95-43B3-AB36-458FE4300FA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B1B7383-AE95-43B3-AB36-458FE4300FA7}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{9B1B7383-AE95-43B3-AB36-458FE4300FA7}.Debug|x64.Build.0 = Debug|Any CPU
+		{9B1B7383-AE95-43B3-AB36-458FE4300FA7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{9B1B7383-AE95-43B3-AB36-458FE4300FA7}.Debug|x86.Build.0 = Debug|Any CPU
+		{9B1B7383-AE95-43B3-AB36-458FE4300FA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B1B7383-AE95-43B3-AB36-458FE4300FA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B1B7383-AE95-43B3-AB36-458FE4300FA7}.Release|x64.ActiveCfg = Release|Any CPU
+		{9B1B7383-AE95-43B3-AB36-458FE4300FA7}.Release|x64.Build.0 = Release|Any CPU
+		{9B1B7383-AE95-43B3-AB36-458FE4300FA7}.Release|x86.ActiveCfg = Release|Any CPU
+		{9B1B7383-AE95-43B3-AB36-458FE4300FA7}.Release|x86.Build.0 = Release|Any CPU
+		{2D4A9825-42E9-4D11-BF20-5328648DEE53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D4A9825-42E9-4D11-BF20-5328648DEE53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D4A9825-42E9-4D11-BF20-5328648DEE53}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{2D4A9825-42E9-4D11-BF20-5328648DEE53}.Debug|x64.Build.0 = Debug|Any CPU
+		{2D4A9825-42E9-4D11-BF20-5328648DEE53}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2D4A9825-42E9-4D11-BF20-5328648DEE53}.Debug|x86.Build.0 = Debug|Any CPU
+		{2D4A9825-42E9-4D11-BF20-5328648DEE53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D4A9825-42E9-4D11-BF20-5328648DEE53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D4A9825-42E9-4D11-BF20-5328648DEE53}.Release|x64.ActiveCfg = Release|Any CPU
+		{2D4A9825-42E9-4D11-BF20-5328648DEE53}.Release|x64.Build.0 = Release|Any CPU
+		{2D4A9825-42E9-4D11-BF20-5328648DEE53}.Release|x86.ActiveCfg = Release|Any CPU
+		{2D4A9825-42E9-4D11-BF20-5328648DEE53}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {092CA81D-961D-46E2-89F9-82959030BE97}
+	EndGlobalSection
+EndGlobal
