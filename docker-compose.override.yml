@@ -5,6 +5,7 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=https://+:443;http://+:80
+      - GREETING_SERVICE=http://greeting-service/
     ports:
       - "55062:80"
       - "44354:443"

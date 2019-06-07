@@ -16,12 +16,17 @@ namespace greeting_controller
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        public Startup(IHostingEnvironment env, IConfiguration configuration)
         {
             Configuration = configuration;
+            m_serviceHost = configuration.GetValue<string>("GREETING_SERVICE");
+            if (m_serviceHost == null || string.IsNullOrWhiteSpace(m_serviceHost))
+                m_serviceHost = "http://host.docker.internal:8081";
         }
 
         public IConfiguration Configuration { get; }
+
+        private readonly string m_serviceHost;
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
@@ -29,8 +34,9 @@ namespace greeting_controller
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             services.AddHttpClient("services", c =>
             {
-                c.BaseAddress = new Uri("http://greeting-service/");
+                c.BaseAddress = new Uri(m_serviceHost);
             });
+            Console.WriteLine($"Greeting Controller is listening on {m_serviceHost}");
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
