@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "greeting-controller", "gree
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{9B1B7383-AE95-43B3-AB36-458FE4300FA7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "greeting-service", "greeting-service\greeting-service.csproj", "{2D4A9825-42E9-4D11-BF20-5328648DEE53}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "greeting-service", "greeting-service\greeting-service.csproj", "{2D4A9825-42E9-4D11-BF20-5328648DEE53}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

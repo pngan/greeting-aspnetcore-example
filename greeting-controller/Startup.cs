@@ -31,7 +31,10 @@ namespace greeting_controller
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddMvc().AddMvcOptions(o =>
+            {
+                o.EnableEndpointRouting = false;
+            });
             services.AddHttpClient("services", c =>
             {
                 c.BaseAddress = new Uri(m_serviceHost);
